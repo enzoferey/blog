@@ -17,7 +17,7 @@ import {
   replaceAnchorLinksByLanguage,
 } from '../utils/i18n';
 
-const GITHUB_USERNAME = 'enzo_ferey';
+const GITHUB_USERNAME = 'enzoferey';
 const GITHUB_REPO_NAME = 'blog';
 const systemFont = `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
