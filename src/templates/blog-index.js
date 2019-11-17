@@ -24,11 +24,11 @@ class BlogIndexTemplate extends React.Component {
           <Bio />
         </aside>
         <main>
-          {langKey !== 'en' && langKey !== 'ru' && (
+          {langKey !== 'en' && (
             <Panel>
               These articles have been{' '}
               <a
-                href="https://github.com/gaearon/overreacted.io#contributing-translations"
+                href="https://github.com/enzoferey/blog#contributing-translations"
                 target="_blank"
                 rel="noopener noreferrer"
               >

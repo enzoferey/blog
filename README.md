@@ -1,4 +1,4 @@
-# [blog.enzoferey.com](https://blog.enzoferey.com/)
+# [CherryPick](https://blog.enzoferey.com/)
 
 [![Build Status](https://travis-ci.org/enzoferey/blog.svg?branch=master)](https://travis-ci.org/enzoferey/blog)
 

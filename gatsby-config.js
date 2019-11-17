@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: 'Overreacted',
-    author: 'Dan Abramov',
-    description: 'Personal blog by Dan Abramov. I explain with words and code.',
-    siteUrl: 'https://overreacted.io',
+    title: 'CherryPick',
+    author: 'Enzo Ferey',
+    description: 'Personal blog by Enzo Ferey. The cherries and the cakes.',
+    siteUrl: 'https://blog.enzoferey.com',
     social: {
-      twitter: '@dan_abramov',
+      twitter: '@enzo_ferey',
     },
   },
   pathPrefix: '/',
@@ -80,7 +80,7 @@ module.exports = {
               return allMarkdownRemark.edges.map(edge => {
                 const siteUrl = site.siteMetadata.siteUrl;
                 const postText = `
-                <div style="margin-top=55px; font-style: italic;">(This is an article posted to my blog at overreacted.io. You can read it online by <a href="${siteUrl +
+                <div style="margin-top=55px; font-style: italic;">(This is an article posted to my blog at blog.enzoferey.com. You can read it online by <a href="${siteUrl +
                   edge.node.fields.slug}">clicking here</a>.)</div>
               `;
 
@@ -126,7 +126,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: "Dan Abramov's Overreacted Blog RSS Feed",
+            title: "Enzo Ferey's CherryPick Blog RSS Feed",
           },
         ],
       },
@@ -134,13 +134,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Overreacted`,
-        short_name: `Overreacted`,
+        name: `CherryPick`,
+        short_name: `CherryPick`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#ffa7c4`,
         display: `minimal-ui`,
-        icon: `src/assets/icon.png`,
+        icon: `src/assets/icon.jpg`,
         theme_color_in_head: false,
       },
     },
