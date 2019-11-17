@@ -1,12 +1,29 @@
 ---
-title: 'Coping with Feedback'
+title: 'Example post'
 date: '2019-03-02'
-spoiler: Sometimes I can’t fall asleep.
+spoiler: Pretty good example spoiler.
 ---
 
 The last few weeks have been very hectic. We’ve finally released a stable version of [React Hooks](https://reactjs.org/blog/2019/02/06/react-v16.8.0.html) and the first [React website translations](https://reactjs.org/blog/2019/02/23/is-react-translated-yet.html). Both of these projects meant a lot to me, and shipping them felt great.
 
 However, I also feel more pressure now to stay on top of the scrutiny that comes when you mark something as stable. Hooks are very new, we are still figuring out “best practices” for some of the less common patterns — both internally at Facebook and in GitHub discussions. But the longer it takes to document and enforce them (e.g. with warnings), the more risk there is that someone will create a course or write an article using a broken pattern without realizing that. It’s hard not to feel at least partially responsible when that happens.
+
+```jsx
+ <div
+  data-element="guarantee"
+  className="formkit-guarantee"
+  style={{
+    color: 'rgb(77, 77, 77)',
+    fontSize: '13px',
+    fontWeight: 400,
+  }}
+>
+  <p>I won’t send you spam.</p>
+  <p>
+    Unsubscribe at <em>any</em> time.
+  </p>
+</div>
+```
 
 Most of this is self-imposed. No one technically expects me to care. I do though.
 
