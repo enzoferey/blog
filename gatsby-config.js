@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: 'CherryPick',
     author: 'Enzo Ferey',
-    description: 'Personal blog by Enzo Ferey. The cherries and the cakes.',
+    description:
+      'Personal blog by Enzo Ferey. The cherries, but also the cakes.',
     siteUrl: 'https://blog.enzoferey.com',
     social: {
       twitter: '@enzo_ferey',
