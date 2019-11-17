@@ -1,0 +1,11 @@
+[[redirects]]
+from = "https://www.blog.enzoferey.com/*"
+to = "https://blog.enzoferey.com/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://blog-enzoferey.netlify.com/*"
+to = "https://blog.enzoferey.com/:splat"
+status = 301
+force = true
