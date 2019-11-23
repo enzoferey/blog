@@ -194,19 +194,22 @@ class BlogPostTemplate extends React.Component {
             style={{
               fontFamily: 'Montserrat, sans-serif',
               marginTop: rhythm(0.25),
+              marginBottom: rhythm(0.25),
             }}
           >
             <Link
               style={{
                 boxShadow: 'none',
                 textDecoration: 'none',
-                color: 'var(--main)',
               }}
               to={'/'}
             >
-              CherryPick
+              {get(this.props, 'data.site.siteMetadata.title')}
             </Link>
           </h3>
+          <p style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            {get(this.props, 'data.site.siteMetadata.slogan')}
+          </p>
           <Bio />
           <nav>
             <ul
@@ -251,6 +254,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        slogan
         author
       }
     }

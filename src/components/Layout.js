@@ -1,11 +1,14 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import Toggle from './Toggle';
 import Helmet from 'react-helmet';
 
-import { rhythm, scale } from '../utils/typography';
 import sun from '../assets/sun.png';
 import moon from '../assets/moon.png';
+
+import { rhythm } from '../utils/typography';
+
+import Toggle from './Toggle';
+import Logo from './Logo';
 
 class Layout extends React.Component {
   state = {
@@ -23,47 +26,21 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       return (
-        <h1
-          style={{
-            ...scale(0.75),
-            marginBottom: 0,
-            marginTop: 0,
-          }}
+        <Link
+          style={{ boxShadow: 'none', position: 'relative', top: -8 }}
+          to={'/'}
         >
-          <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'var(--textTitle)',
-            }}
-            to={'/'}
-          >
-            {title}
-          </Link>
-        </h1>
+          <Logo isFull={true} />
+        </Link>
       );
     } else {
       return (
-        <h3
-          style={{
-            fontFamily: 'Montserrat, sans-serif',
-            marginTop: 0,
-            marginBottom: 0,
-            height: 42, // because
-            lineHeight: '2.625rem',
-          }}
+        <Link
+          style={{ boxShadow: 'none', position: 'relative', top: -8 }}
+          to={'/'}
         >
-          <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'var(--main)',
-            }}
-            to={'/'}
-          >
-            {title}
-          </Link>
-        </h3>
+          <Logo isFull={false} />
+        </Link>
       );
     }
   }

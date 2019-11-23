@@ -1,0 +1,25 @@
+.SmallLogo {
+  width: 90px;
+}
+
+.FullLogo {
+  width: 192px;
+}
+
+.Logo--mobile {
+  display: block;
+}
+
+.Logo--tablet {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .Logo--mobile {
+    display: none;
+  }
+
+  .Logo--tablet {
+    display: block;
+  }
+}

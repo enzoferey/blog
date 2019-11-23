@@ -20,9 +20,6 @@ class BlogIndexTemplate extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO />
-        <aside>
-          <Bio />
-        </aside>
         <main>
           {langKey !== 'en' && (
             <Panel>
