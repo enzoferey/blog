@@ -1,7 +1,7 @@
 ---
 title: 'Node.js command-line packages'
 date: '2019-11-29'
-spoiler: Call your packages in CLI.
+spoiler: How to call your packages in a CLI.
 ---
 
 Have you ever wondered how can you build a Node.js package that can be called via a Command Line Interface ?
