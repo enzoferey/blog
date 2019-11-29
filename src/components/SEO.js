@@ -22,7 +22,7 @@ const query = graphql`
 function SEO({
   meta,
   image = 'og-image.jpg',
-  twitterImage = 'twitter-card.jpg',
+  twitterImage = 'twitter-card-1.jpg',
   title,
   description,
   slug,
