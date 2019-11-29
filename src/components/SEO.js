@@ -21,7 +21,8 @@ const query = graphql`
 
 function SEO({
   meta,
-  image = 'og-image-1.jpg',
+  image = 'og-image.jpg',
+  twitterImage = 'twitter-card.jpg',
   title,
   description,
   slug,
@@ -34,6 +35,9 @@ function SEO({
         const { siteMetadata } = data.site;
         const metaDescription = description || siteMetadata.description;
         const metaImage = image ? `${siteMetadata.siteUrl}/${image}` : null;
+        const twitterCardImage = twitterImage
+          ? `${siteMetadata.siteUrl}/${twitterImage}`
+          : null;
         const url = `${siteMetadata.siteUrl}${slug}`;
         return (
           <Helmet
@@ -87,9 +91,15 @@ function SEO({
                         property: 'og:image',
                         content: metaImage,
                       },
+                    ]
+                  : []
+              )
+              .concat(
+                twitterCardImage
+                  ? [
                       {
                         name: 'twitter:image',
-                        content: metaImage,
+                        content: twitterCardImage,
                       },
                     ]
                   : []
