@@ -19,7 +19,14 @@ const query = graphql`
   }
 `;
 
-function SEO({ meta, image, title, description, slug, lang = 'en' }) {
+function SEO({
+  meta,
+  image = 'og-image.jpg',
+  title,
+  description,
+  slug,
+  lang = 'en',
+}) {
   return (
     <StaticQuery
       query={query}
