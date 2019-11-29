@@ -21,7 +21,7 @@ const query = graphql`
 
 function SEO({
   meta,
-  image = 'og-image.jpg',
+  image = 'og-image-1.jpg',
   title,
   description,
   slug,
