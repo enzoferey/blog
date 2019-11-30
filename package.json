@@ -61,9 +61,9 @@
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-helmet": "^5.2.0",
-    "react-typography": "^0.16.13",
-    "typography": "^0.16.17",
-    "typography-theme-wordpress-2016": "^0.15.10"
+    "react-typography": "^0.16.19",
+    "typography": "^0.16.19",
+    "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
     "eslint": "^6.7.2",
