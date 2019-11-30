@@ -1,7 +1,7 @@
 const _ = require('lodash');
 const Promise = require('bluebird');
 const path = require('path');
-const { createFilePath } = require('gatsby-source-filesystem');
+
 const { supportedLanguages } = require('./i18n');
 
 exports.createPages = ({ graphql, actions }) => {
@@ -191,7 +191,7 @@ exports.onCreateNode = ({ node, actions }) => {
     // or that already link to translations.
     const markdown = node.internal.content;
     let maybeAbsoluteLinks = [];
-    let linkRe = /\]\((\/[^\)]+\/)\)/g;
+    let linkRe = /\]\((\/[^)]+\/)\)/g;
     let match = linkRe.exec(markdown);
     while (match != null) {
       maybeAbsoluteLinks.push(match[1]);

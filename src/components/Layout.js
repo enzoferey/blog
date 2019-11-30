@@ -21,7 +21,7 @@ class Layout extends React.Component {
     };
   }
   renderHeader() {
-    const { location, title } = this.props;
+    const { location } = this.props;
     const rootPath = `${__PATH_PREFIX__}/`;
 
     if (location.pathname === rootPath) {
@@ -86,19 +86,19 @@ class Layout extends React.Component {
                 icons={{
                   checked: (
                     <img
+                      alt="Moon icon"
                       src={moon}
                       width="16"
                       height="16"
-                      role="presentation"
                       style={{ pointerEvents: 'none' }}
                     />
                   ),
                   unchecked: (
                     <img
+                      alt="Sun icon"
                       src={sun}
                       width="16"
                       height="16"
-                      role="presentation"
                       style={{ pointerEvents: 'none' }}
                     />
                   ),

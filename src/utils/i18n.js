@@ -71,7 +71,7 @@ export const createLanguageLink = (slug, lang) => {
 
 export const replaceAnchorLinksByLanguage = (html, code) => {
   // Match any link using https://regexr.com/4airl
-  const matches = html.match(/https?:\/\/(www)?[^\/\s)"?]+/gm);
+  const matches = html.match(/https?:\/\/(www)?[^/\s)"?]+/gm);
 
   // Return same html if no matches were found
   // or code isn't supported
