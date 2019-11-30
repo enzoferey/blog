@@ -56,7 +56,7 @@ But this is not the end right ? We would like to call our script executing `hell
 
 Let's update our `package.json` file for that:
 
-```jsxon{6,7,8}
+```json{6,7,8}
 {
   "name": "my-cli-package",
   "version": "1.0.0",
