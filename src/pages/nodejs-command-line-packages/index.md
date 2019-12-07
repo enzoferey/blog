@@ -84,6 +84,8 @@ $ npm link
 
 This will create a [symlink](https://en.wikipedia.org/wiki/Symbolic_link) pointing to our script. Again, you might get a "Permission denied" error. You will need to execute `sudo npm link` in that case.
 
+> Don't forget to run `npm unlink` when you are finish working on the library to clean up your local work environment.
+
 Now if you execute:
 
 ```bash
