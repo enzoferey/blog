@@ -264,7 +264,7 @@ From my point of view, it's like black and white:
 
 Readability concerns me a lot. The same logic can be written in many ways, and it has an impact on the amount of effort needed to understand it afterwards.
 
-When writing React components, I believe skimming through the component should be enough to understand it. To reach that goal, I think it's fundamental to remove all the noise around the logic your component is in charge off. This could mean to extract data manipulation logic as we just did or to split your component by concerns.
+When writing React components, I believe skimming through the component should be enough to understand it. To reach that goal, I think it's fundamental to remove all the noise around the logic your component is in charge of. This could mean to extract data manipulation logic as we just did or to split your component by concerns.
 
 It's certainly not enough to catch bugs -- specially the UI interaction ones (you should [test your components](https://testing-library.com/docs/react-testing-library/intro)) -- but you are keeping your room clean and tidy. You are [falling into the pit of success](https://blog.codinghorror.com/falling-into-the-pit-of-success/).
 
